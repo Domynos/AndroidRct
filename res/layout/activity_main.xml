@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <SearchView
+            android:id="@+id/searchView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        </SearchView>
+
+        <ImageButton
+            android:id="@+id/imageFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/ic_action_favorite" />
+
+        <ImageButton
+            android:id="@+id/imageLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/ic_action_location_found" />
+
+    </LinearLayout>
+	 <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="@dimen/activity_vertical_margin" >
+	
+	        <ListView
+	            android:id="@android:id/list"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="#aaaaaa" >
+	        </ListView>
+	
+	    </RelativeLayout>
+</RelativeLayout>
